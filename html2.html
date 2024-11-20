@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index2</title>
+</head>
+<body>
+    <h2>Title of the paragraph</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ex aliquid cupiditate quisquam, voluptate itaque delectus repellat quaerat! Dolorum praesentium officia modi molestiae veniam incidunt rem repudiandae suscipit odio sapiente.</p>
+    <p id="first-para">This is paragraph 01</p>
+    <p class="last-para">This is paragraph 02</p>
+    <p class="last-para">This is paragraph 03</p>
+    <p>This is paragraph 04</p>
+
+
+    <!-- -----------------new lesson ----------------- -->
+
+    <div class="pearen-ele">
+        <div class="child">
+            <h1>Hello world</h1>
+        </div>
+    </div>
+
+    <button id="click-me">click me</button>
+
+    <script>
+        let h2 = document.getElementsByTagName("h2");
+        h2[0].textContent = "Hello";//change title of text content to Hello
+        console.log(h2[0].textContent)
+        let p = document.getElementsByTagName("p");
+        console.log(p[0].textContent);
+
+        let first_para = document.getElementById("first-para"); //get data from conten by id
+        console.log(first_para.textContent)//output
+
+        let last_para = document.getElementsByClassName("last-para");//get data from conten by class name
+        console.log(last_para[1].textContent)// output data of this is paragraph 3
+        last_para[0].textContent = "change to pa2" //change data on para2 to chage to pa2
+
+        let testQ1 = document.querySelector(".last-para");// queryselector use for select data by id and class if class have > 2 it is show first class (queryselector can select on id class and tag)
+        console.log(testQ1.textContent)//output 
+
+        let ql = document.querySelectorAll(".last-para");// queryselectall use for select  data by class name it is select same to select by tage name 
+        console.log(ql[1].textContent)// output p3
+
+
+        // -- -----------------new lesson ----------------- -
+        let select_e = document.querySelector(".pearen-ele");
+        console.log(select_e);
+        let style = document.querySelectorAll(".last-para");
+        style[1].style = "color:blue"
+
+        let btn = document.querySelector("#click-me");
+        btn.addEventListener("click", () =>{
+            console.log("hi")
+        } )        
+
+    </script>
+</body>
+</html>

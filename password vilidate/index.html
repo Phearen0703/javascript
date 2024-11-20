@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <h4>Change New password</h4>
+        <p>You alsost done, you just need to fill new password</p>
+        <form action="">
+            <div class="form-group">
+                <label for="password">New Password</label>
+                <input type="password" name="password" id="password" placeholder="New Password">
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password">
+            </div>
+
+            <!-- password gidline message -->
+             <div class="password-guidline">
+                <div class="duidline-item" id="lwCase">
+                    <i class="fa-regular fa-square-check"></i>
+                    <p>One lowercasw charector</p>
+                </div>
+                <div class="duidline-item">
+                    <i class="fa-regular fa-square-check"></i>
+                    <p>One special charector</p>
+                </div>
+                <div class="duidline-item" id="upCase">
+                    <i class="fa-regular fa-square-check"></i>
+                    <p>One uppercase charector</p>
+                </div>
+                <div class="duidline-item" id="minChar">
+                    <i class="fa-regular fa-square-check"></i>
+                    <p>8 charector minimum</p>
+                </div>
+                <div class="duidline-item">
+                    <i class="fa-regular fa-square-check"></i>
+                    <p>One number</p>
+                </div>
+             </div>
+             <button>Reset password</button>
+        </form>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
